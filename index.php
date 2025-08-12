@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Header with Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"> * Portfolio </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Certification</a></li>
+                <li><a href="#">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="text-section">
+            <br>
+            <br>
+             <br>
+              <br>
+            <p>Hey there,</p>
+            <h1>I'm Izuan Mustaffa</h1>
+            <p class="highlight">Full Stack Dev | Ethical Hacker | AWS Cloud Practitioner</p>
+            <p class="description">
+            I’m a seasoned full-stack developer with over 13 years of experience in IT support and software development, covering both front-end and back-end technologies such as Angular, JavaScript, TypeScript, Java, PHP , ASP.Net HTML, and CSS. <br><br>I’m also certified AWS Cloud Practitioner and a Certified Ethical Hacker, which gives me a strong foundation in Cloud Technology and Cybersecurity. Currently active exploring Artificial Intellingence and Digital Leadership.
+            </p>
+            <a href="#" class="btn">Get in touch</a>
+        </div>
+
+        <div class="image-section">
+            <img src="images/hacker.png" alt="Hacker Image">
+        </div>
+
+        <div class="stats">
+            <div class="stat"><span>13+</span><br>Years of Experience</div>
+            <div class="stat"><span>20+</span><br>Completed Software Projects</div>
+            <div class="stat"><span>RM 1 billion+</span><br>Value Creation</div>
+        </div>
+    </div>
+
+</body>
+</html>
