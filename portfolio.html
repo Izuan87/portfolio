@@ -28,8 +28,8 @@
                     <img src="images/Project One.jpg" alt="Project 1" id="project-img-1" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project One</h3>
-                    <p>Web application for secure file sharing with end-to-end encryption and user authentication.</p>
+                    <h3>UNIFI DELTA</h3>
+                    <p>Platform to accelerate highspeed broadband service fulfilment and installation process based on its next best action in non JENDELA area.</p>
                 </div>
             </div>
             <div class="card">
@@ -37,17 +37,17 @@
                     <img src="images/Project Two.jpg" alt="Project 2" id="project-img-2" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Two</h3>
-                    <p>Personal finance dashboard with real-time analytics and budget tracking features.</p>
-                </div>
+                    <h3>TROIKA</h3>
+                    <p></p>
+                </div>An all-in-one platform to accelerate the fulfilment of Next Best Action (NBA) and Service Installation for UNIFI customers.
             </div>
             <div class="card">
                 <div class="card-image">
                     <img src="images/Project Three.jpg" alt="Project 3" id="project-img-3" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Three</h3>
-                    <p>Mobile app for ethical hacking tutorials and cybersecurity news updates.</p>
+                    <h3>OFFICE AUTOMATION SYSTEM</h3>
+                    <p>One stop center to handle routine tasks and processes within an office environment, aiming to improve efficiency and reduce manual effort</p>
                 </div>
             </div>
             <div class="card">
@@ -55,8 +55,8 @@
                     <img src="images/Project Four.jpg" alt="Project 4" id="project-img-4" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Four</h3>
-                    <p>Cloud-based inventory management system for small businesses.</p>
+                    <h3>TM FORCE</h3>
+                    <p>TM FORCE is the key to digitise workforce through paperless task distribution and seamlessly connecting customers, agents, dispatchers and service technicians in a single platform for Telekom Malaysia</p>
                 </div>
             </div>
             <div class="card">
@@ -64,8 +64,8 @@
                     <img src="images/Project Five.jpg" alt="Project 5" id="project-img-5" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Five</h3>
-                    <p>AI-powered chatbot for customer support and lead generation.</p>
+                    <h3>iTRACKER</h3>
+                    <p>Fiber Optic and Copper Quality and Performance tracking system for Telekom Malaysia</p>
                 </div>
             </div>
             <div class="card">
@@ -73,8 +73,8 @@
                     <img src="images/Project Six.jpg" alt="Project 6" id="project-img-6" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Six</h3>
-                    <p>Portfolio website template with modern UI and responsive design.</p>
+                    <h3>EXTRAPORT Mobile Apps</h3>
+                    <p>Extra port installation via mobile application for Telekom Malaysia</p>
                 </div>
             </div>
             <div class="card">
@@ -82,8 +82,8 @@
                     <img src="images/Project Seven.jpg" alt="Project 7" id="project-img-7" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Seven</h3>
-                    <p>Inventory tracking system for retail businesses with barcode integration.</p>
+                    <h3>MARDI LIVESTOCK TRACKING</h3>
+                    <p>Livestock tracking system for MARDI with RFID integration.</p>
                 </div>
             </div>
             <div class="card">
@@ -91,8 +91,8 @@
                     <img src="images/Project Eight.jpg" alt="Project 8" id="project-img-8" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Eight</h3>
-                    <p>Learning management platform for online courses and student progress tracking.</p>
+                    <h3>SIDE PROJECT - CATUR CILIK</h3>
+                    <p>Information hub for chess prodigy</p>
                 </div>
             </div>
             <div class="card">
@@ -100,8 +100,8 @@
                     <img src="images/Project Nine.jpg" alt="Project 9" id="project-img-9" class="project-img" style="cursor:pointer;">
                 </div>
                 <div class="card-content">
-                    <h3>Project Nine</h3>
-                    <p>Restaurant reservation and order management web application.</p>
+                    <h3>SIDE PROJECT - BAZAR.MY</h3>
+                    <p>One stop eCommerce website</p>
                 </div>
             </div>
             
@@ -109,6 +109,7 @@
     </main>
 
     <footer>
+    
         <!-- Modals for all projects -->
         <div id="modals-container">
         </div>
@@ -129,22 +130,54 @@
             ];
             var modalHTML = '';
             for (let i = 1; i <= 9; i++) {
+                // Modal content for each project
+                const modalTitles = [
+                    'UNIFI DELTA',
+                    'TROIKA',
+                    'OFFICE AUTOMATION SYSTEM',
+                    'TM FORCE',
+                    'iTRACKER',
+                    'EXTRAPORT Mobile Apps',
+                    'MARDI LIVESTOCK TRACKING',
+                    'SIDE PROJECT - CATUR CILIK',
+                    'SIDE PROJECT - BAZAR.MY'
+                ];
+                const modalOverviews = [
+                    'Platform to accelerate highspeed broadband service fulfilment and installation process based on its next best action in non JENDELA area.',
+                    'An all-in-one platform to accelerate the fulfilment of Next Best Action (NBA) and Service Installation for UNIFI customers.',
+                    'One stop center to handle routine tasks and processes within an office environment, aiming to improve efficiency and reduce manual effort',
+                    'TM FORCE is the key to digitise workforce through paperless task distribution and seamlessly connecting customers, agents, dispatchers and service technicians in a single platform for Telekom Malaysia',
+                    'Fiber Optic and Copper Quality and Performance tracking system for Telekom Malaysia',
+                    'Extra port installation via mobile application for Telekom Malaysia',
+                    'Livestock tracking system for MARDI with RFID integration.',
+                    'Information hub for chess prodigy',
+                    'One stop eCommerce website'
+                ];
+                const modalTech = [
+                    'JavaScript, HTML, CSS',
+                    'JavaScript, HTML, CSS',
+                    'JavaScript, HTML, CSS',
+                    'JavaScript, HTML, CSS',
+                    'JavaScript, HTML, CSS',
+                    'Java for Android',
+                    'Visual Basic Programming',
+                    'JavaScript, HTML, CSS',
+                    'JavaScript, HTML, CSS'
+                ];
                 modalHTML += `
-                <div id="project-modal-${i}" class="modal" style="display:none;">
-                    <div class="modal-content">
-                        <span class="close" data-modal="project-modal-${i}">&times;</span>
-                        <h2>Project ${i} Details</h2>
-                        <div class="modal-single-image">
-                            <img src="${modalImages[i-1]}" alt="Project ${i} Detail" style="width:100%;max-width:264px;height:192px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;display:block;margin:0 auto 18px auto;">
+                    <div id="project-modal-${i}" class="modal" style="display:none;">
+                        <div class="modal-content">
+                            <span class="close" data-modal="project-modal-${i}">&times;</span>
+                            <h2>${modalTitles[i-1]}</h2>
+                            <div class="modal-single-image">
+                                <img src="${modalImages[i-1]}" alt="${modalTitles[i-1]}" style="width:100%;max-width:264px;height:192px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;display:block;margin:0 auto 18px auto;">
+                            </div>
+                            <div class="modal-description">
+                                <p><strong>Overview:</strong> ${modalOverviews[i-1]}</p>
+                                <p><strong>Technology Stack:</strong> ${modalTech[i-1]}</p>
+                            </div>
                         </div>
-                        <div class="modal-description">
-                            <p><strong>Overview:</strong> This project is a secure file sharing web application designed for both individuals and organizations.</p>
-                            <p><strong>Key Features:</strong> End-to-end encryption, user authentication, and real-time activity monitoring ensure data privacy and security.</p>
-                            <p><strong>Technology Stack:</strong> Built with React, Node.js, and MongoDB, leveraging modern web security best practices.</p>
-                            <p><strong>Use Case:</strong> Ideal for teams needing to share sensitive documents and collaborate securely online.</p>
-                        </div>
-                    </div>
-                </div>`;
+                    </div>`;
             }
             modalsContainer.innerHTML = modalHTML;
 
