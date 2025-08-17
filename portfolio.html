@@ -10,13 +10,29 @@
     <header>
         <nav class="navbar">
             <div class="logo"> <span style="font-weight:bold;">Projects</span>  </div>
-            <ul class="nav-links">
+            <button class="burger" id="burger-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html" class="active">Projects</a></li>
-                <li><a href="#">Certification</a></li>
+                <li><a href="certification.html">Certification</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+    <script>
+    // Burger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.getElementById('burger-menu');
+        const navLinks = document.getElementById('nav-links');
+        burger.addEventListener('click', function() {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('open');
+        });
+    });
+    </script>
     </header>
     <!-- Main content starts below -->
      <br>
@@ -170,7 +186,7 @@
                             <span class="close" data-modal="project-modal-${i}">&times;</span>
                             <h2>${modalTitles[i-1]}</h2>
                             <div class="modal-single-image">
-                                <img src="${modalImages[i-1]}" alt="${modalTitles[i-1]}" style="width:100%;max-width:264px;height:192px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);object-fit:cover;display:block;margin:0 auto 18px auto;">
+                                <img src="${modalImages[i-1]}" alt="${modalTitles[i-1]}" class="modal-full-img">
                             </div>
                             <div class="modal-description">
                                 <p><strong>Overview:</strong> ${modalOverviews[i-1]}</p>

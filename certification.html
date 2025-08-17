@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> <span style="font-weight:bold;">Portfolio</span> </div>
+            <button class="burger" id="burger-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="certification.html" class="active">Certification</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <script>
+    // Burger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.getElementById('burger-menu');
+        const navLinks = document.getElementById('nav-links');
+        burger.addEventListener('click', function() {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('open');
+        });
+    });
+    </script>
+    </header>
+    <main class="cert-main-section">
+        <section class="cert-section">
+            <h2 class="cert-title">Certifications</h2>
+            <p class="cert-desc">A showcase of my professional certifications.</p>
+            <div class="cert-grid">
+                <div class="cert-card" data-img="images/cert1.jpg" data-label="TM Value Leadership Program">
+                    <img src="images/cert1.jpg" alt="TM Value Leadership Program" class="cert-img">
+                    <div class="cert-label">TM Value Leadership Program</div>
+                </div>
+                <div class="cert-card" data-img="images/cert2.jpg" data-label="Certified Ethical Hacker">
+                    <img src="images/cert2.jpg" alt="Certified Ethical Hacker" class="cert-img">
+                    <div class="cert-label">Certified Ethical Hacker</div>
+                </div>
+                <div class="cert-card" data-img="images/cert3.jpg" data-label="AWS Cloud Practitioner">
+                    <img src="images/cert3.jpg" alt="AWS Certified Cloud Practitioner" class="cert-img">
+                    <div class="cert-label">AWS Cloud Practitioner</div>
+                </div>
+                <div class="cert-card" data-img="images/cert4.jpg" data-label="Digital Leadership">
+                    <img src="images/cert4.jpg" alt="Digital Leadership" class="cert-img">
+                    <div class="cert-label">Digital Leadership</div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal for full-size cert -->
+        <div id="cert-modal" class="cert-modal">
+            <span class="cert-modal-close">&times;</span>
+            <img class="cert-modal-img" src="" alt="Certification Full Size">
+            <div class="cert-modal-caption"></div>
+        </div>
+        <footer>
+            <p>&copy; 2025 My Portfolio</p>
+        </footer>
+    </main>
+    <script>
+    // Modal logic for cert popup
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('cert-modal');
+        const modalImg = document.querySelector('.cert-modal-img');
+        const modalCaption = document.querySelector('.cert-modal-caption');
+        const closeBtn = document.querySelector('.cert-modal-close');
+        document.querySelectorAll('.cert-card').forEach(card => {
+            card.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                modalImg.src = card.getAttribute('data-img');
+                modalCaption.textContent = card.getAttribute('data-label');
+            });
+        });
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+            modalImg.src = '';
+        };
+        modal.onclick = function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                modalImg.src = '';
+            }
+        };
+    });
+    </script>
+</body>
+</html>

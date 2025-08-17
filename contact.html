@@ -10,15 +10,31 @@
     <header>
         <nav class="navbar">
             <div class="logo"> <span style="font-weight:bold;">Portfolio</span> </div>
-            <ul class="nav-links">
+            <button class="burger" id="burger-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#">Certification</a></li>
+                <li><a href="certification.html">Certification</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
+    <script>
+    // Burger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.getElementById('burger-menu');
+        const navLinks = document.getElementById('nav-links');
+        burger.addEventListener('click', function() {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('open');
+        });
+    });
+    </script>
     </header>
-    <main class="contact-main-section">
+
         <section class="contact-section">
             <h2 class="contact-title">Get In Touch</h2>
             <p class="contact-desc">Feel free to reach out to me for any questions or opportunities.</p>
@@ -53,9 +69,9 @@
             </div>
         </section>
         <footer>
-            <p>&copy; 2025 My Portfolio</p>
+          
         </footer>
-    </main>
+
    
 </body>
 </html>

@@ -6,18 +6,38 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
      <!-- Header with Menu -->
+
     <header>
         <nav class="navbar">
             <div class="logo"> Portfolio </div>
-            
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+            <button class="burger" id="burger-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Projects</a></li>
-                <li><a href="#">Certification</a></li>
-                <li><a href="#">Contact</a></li> 
+                <li><a href="certification.html">Certification</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+</head>
+
+<body>
+
+<script>
+// Burger menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.getElementById('burger-menu');
+    const navLinks = document.getElementById('nav-links');
+    burger.addEventListener('click', function() {
+        navLinks.classList.toggle('nav-active');
+        burger.classList.toggle('open');
+    });
+});
+</script>
 
 </head>
 
