@@ -1,3 +1,6 @@
+.card {
+    padding-top: 15%;
+}
 /* Burger Menu Styles */
 .burger {
     display: none;
